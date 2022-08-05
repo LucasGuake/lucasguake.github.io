@@ -5,6 +5,13 @@
     <description>所有文章 | 张祎 de 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>331377750036@qq.com (@张祎)</managingEditor>
       <webMaster>331377750036@qq.com (@张祎)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://lucasguake.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title></title>
+  <link>https://lucasguake.github.io/111/</link>
+  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+  <author>@张祎</author>
+  <guid>https://lucasguake.github.io/111/</guid>
+  <description><![CDATA[1 部署 1. 生成静态页面 baseURL = &ldquo;https://lucasguake.github.io/ &quot; 1 hugo ##生成静态页面文件 2. git上传 1 2 3 4 5 6 cd public git init ##初始化仓库 git remote add origin https://github.com/lucasguake/lucasguake.github.io.git ##链接远程仓库 git add . git commit -m &#34;first commit&#34;]]></description>
+</item><item>
   <title>链接收藏</title>
   <link>https://lucasguake.github.io/friends/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
@@ -24,14 +31,7 @@
   <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
   <author>@张祎</author>
   <guid>https://lucasguake.github.io/111/</guid>
-  <description><![CDATA[123]]></description>
-</item><item>
-  <title></title>
-  <link>https://lucasguake.github.io/111/</link>
-  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-  <author>@张祎</author>
-  <guid>https://lucasguake.github.io/111/</guid>
-  <description><![CDATA[123]]></description>
+  <description><![CDATA[1 部署 1. 生成静态页面 baseURL = &ldquo;https://lucasguake.github.io/ &quot; 1 hugo ##生成静态页面文件 2. git上传 1 2 3 4 5 6 cd public git init ##初始化仓库 git remote add origin https://github.com/lucasguake/lucasguake.github.io.git ##链接远程仓库 git add . git commit -m &#34;first commit&#34;]]></description>
 </item><item>
   <title>建站日志</title>
   <link>https://lucasguake.github.io/rizhi/</link>
