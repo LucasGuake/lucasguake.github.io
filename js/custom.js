@@ -104,13 +104,13 @@ window.onload = function() {
   var titleTime;
   document.addEventListener('visibilitychange', function() {
     if(document.hidden) {
-      $('[rel="icon"]').attr('href', "/failure.ico");
-      $('[rel="shortcut icon"]').attr('href', "/failure.ico");
+      $('[rel="icon"]').attr('href', "");
+      $('[rel="shortcut icon"]').attr('href', "");
       document.title = '喔唷，崩溃啦！';
       clearTimeout(titleTime);
     } else {
-      $('[rel="icon"]').attr('href', "/favicon-32x32.png");
-      $('[rel="shortcut icon"]').attr('href', "/favicon-32x32.png");
+      $('[rel="icon"]').attr('href', "");
+      $('[rel="shortcut icon"]').attr('href', "");
       document.title = '咦，页面又好了！';
       titleTime = setTimeout(function() {
         document.title = OriginTitile;
