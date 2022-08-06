@@ -1,16 +1,61 @@
 # 链接收藏
 
+
+这篇文章提供了博主收藏的链接.
+
+<!--more-->
+
 ## 前言
-233
-233
-2323
-23
-23
-123
-213
-12
-3
-## 2022
+```
+{{</* friend
+name="网站名字"
+url="网站链接"
+logo="网站图标地址"
+word="网站介绍"  
+primary-color="边框及鼠标悬停的背景颜色" 
+img-animation="头像动画" 
+border-animation="边框动画" 
+*/>}}
+```
+` primary-color  支持7种：default(默认）、red、green、blue、linear-red、linear-green、linear-blue`
+` img-animation 支持 rotate(鼠标悬停时旋转，此为默认效果)、auto_rotate_left(左旋转)、auto_rotate_right(右旋转) `
+`border-animation 支持 shadow(阴影，此为默认效果)、borderFlash(边框闪现)、led(跑马灯)、bln(主颜色呼吸灯) `
+## 示例
+{{< friend
+name="张祎の学习笔记"
+url="https://lucasguake.github.io/"
+logo="https://lucasguake.github.io/images/avatar.jpg"
+word="在学习的路上，坚持下来的人，都会收获多多。"  
+primary-color="linear-blue"   
+img-animation="auto_rotate_left"  
+border-animation="borderFlash" 
+>}}
+
+{{< friend
+name="张祎の学习笔记"
+url="https://lucasguake.github.io/"
+logo="https://lucasguake.github.io/images/avatar.jpg"
+word="在学习的路上，坚持下来的人，都会收获多多。"  
+primary-color="linear-green"   
+img-animation="rotate"  
+border-animation="led" 
+>}}
+
+{{< friend
+name="张祎の学习笔记"
+url="https://lucasguake.github.io/"
+logo="https://lucasguake.github.io/images/avatar.jpg"
+word="在学习的路上，坚持下来的人，都会收获多多。"  
+primary-color="linear-red"   
+img-animation="auto_rotate_right"  
+border-animation="bln" 
+>}}
+
+
+
+## 学习类
+
+
 
 ### 07
 
@@ -38,3 +83,13 @@
 ### 09 
 
 123214
+
+## 办公类
+12312
+### 213213
+
+
+
+
+
+## 电影
