@@ -84,7 +84,7 @@ $(function() {
 /* 后置加载页面组件的背景图片 */
 $(function() {
 	/* 首页头像div加载GitHub Chart作为背景图片 */
-	$("div.home-avatar").attr('style', "background: url(https://ghchart.rshah.org/FFA500/zhangyi);background-repeat: no-repeat;background-position: center;background-size: auto 7.5rem;");
+	$("div.home-avatar").attr('style', "background: url(https://ghchart.rshah.org/FFA500/lucasguake);background-repeat: no-repeat;background-position: center;background-size: auto 7.5rem;");
 
 	/* 评论框加载背景图片 */
 	$(".v[data-class=v] .veditor").attr('style', "background-image: url(" + $cdnPrefix + "/images/common/valinebg.webp) !important;");
