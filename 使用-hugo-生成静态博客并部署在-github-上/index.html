@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>使用hugo生成静态博客并部署在GitHub上 - 张祎 de 学习笔记</title><meta name="author" content="@张祎">
+<meta name="author-link" content="https://lucasguake.github.io">
+<meta name="description" content="hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。" />
+<meta name="keywords" content="hugo,github" /><meta itemprop="name" content="使用hugo生成静态博客并部署在GitHub上">
+<meta itemprop="description" content="hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。"><meta itemprop="datePublished" content="2022-08-06T21:57:40+08:00" />
+<meta itemprop="dateModified" content="2022-08-07T17:44:40+08:00" />
+<meta itemprop="wordCount" content="770"><meta itemprop="image" content="https://lucasguake.github.io/logo.png"/>
+<meta itemprop="keywords" content="hugo,github," /><meta property="og:title" content="使用hugo生成静态博客并部署在GitHub上" />
+<meta property="og:description" content="hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/" /><meta property="og:image" content="https://lucasguake.github.io/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-06T21:57:40+08:00" />
+<meta property="article:modified_time" content="2022-08-07T17:44:40+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://lucasguake.github.io/logo.png"/>
+
+<meta name="twitter:title" content="使用hugo生成静态博客并部署在GitHub上"/>
+<meta name="twitter:description" content="hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。"/>
+<meta name="application-name" content="张祎 笔记">
+<meta name="apple-mobile-web-app-title" content="张祎 笔记"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#252627"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/images/book.svg"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/" /><link rel="prev" href="https://lucasguake.github.io/jiaocheng/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "使用hugo生成静态博客并部署在GitHub上",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/lucasguake.github.io\/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A\/"
+    },"image": ["https:\/\/lucasguake.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "hugo, github","wordcount":  770 ,
+    "url": "https:\/\/lucasguake.github.io\/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A\/","datePublished": "2022-08-06T21:57:40+08:00","dateModified": "2022-08-07T17:44:40+08:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+      "@type": "Organization",
+      "name": "@张祎","logo": "https:\/\/lucasguake.github.io\/images\/avatar.jpg"},"author": {
+        "@type": "Person",
+        "name": "@张祎"
+      },"description": ""
+  }
+  </script></head>
+  <body header-desktop="sticky" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script><div class="wrapper"><header class="desktop" id="header-desktop">
+  <div class="header-wrapper" github-corner="right">
+    <div class="header-title">
+      <a href="/" title="张祎 de 学习笔记"><span class="header-title-text"> 📖张祎の学习笔记</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li
+              class="menu-item"
+              
+            >
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class='fas fa-archive fa-fw fa-sm'></i> 所有文章</a></li><li
+              class="menu-item"
+              
+            >
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class='fas fa-th fa-fw fa-sm'></i> 分类</a></li><li
+              class="menu-item"
+              
+            >
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class='fas fa-tags fa-fw fa-sm'></i> 标签</a></li><li
+              class="menu-item"
+              
+            >
+              <a
+                class="menu-link"
+                href="/rizhi/"
+                title="主题文档"
+                
+              ><i class='fas fa-book fa-fw fa-sm'></i> 建站日志</a></li><li
+              class="menu-item"
+              
+            >
+              <a
+                class="menu-link"
+                href="/friends/"
+                title="友情链接"
+                
+              ><i class='fas fa-users fa-fw fa-sm'></i> 链接收藏</a></li><li
+              class="menu-item"
+              
+            >
+              <a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class='fas fa-info-circle fa-fw fa-sm'></i> 关于</a></li><li
+              class="menu-item d-none-desktop text-center"
+              
+            >
+              <a
+                class="menu-link"
+                href="https://github.com/ihao/FixILrut"
+                title="GitHub"
+                rel="noopener noreffer" target="_blank"
+              ><i class='fab fa-github fa-fw'></i> </a></li><li class="menu-item delimiter"></li><li class="menu-item language">
+            <span title="选择语言">简体中文<i class="dropdown-icon fas fa-chevron-down"></i>
+            </span>
+            <ul class="sub-menu"><li class="menu-item">没有更多翻译</li></ul>
+          </li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fas fa-times-circle fa-fw"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fas fa-spinner fa-fw fa-spin"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fas fa-adjust fa-fw"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="张祎 de 学习笔记"><span class="header-title-text"> 📖张祎の学习笔记</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="搜索文章标题或内容 ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                <i class="fas fa-times-circle fa-fw"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fas fa-spinner fa-fw fa-spin"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              取消
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class='fas fa-archive fa-fw fa-sm'></i> 所有文章</a></li><li
+              class="menu-item"
+            ><a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class='fas fa-th fa-fw fa-sm'></i> 分类</a></li><li
+              class="menu-item"
+            ><a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class='fas fa-tags fa-fw fa-sm'></i> 标签</a></li><li
+              class="menu-item"
+            ><a
+                class="menu-link"
+                href="/rizhi/"
+                title="主题文档"
+                
+              ><i class='fas fa-book fa-fw fa-sm'></i> 建站日志</a></li><li
+              class="menu-item"
+            ><a
+                class="menu-link"
+                href="/friends/"
+                title="友情链接"
+                
+              ><i class='fas fa-users fa-fw fa-sm'></i> 链接收藏</a></li><li
+              class="menu-item"
+            ><a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class='fas fa-info-circle fa-fw fa-sm'></i> 关于</a></li><li
+              class="menu-item d-none-desktop text-center"
+            ><a
+                class="menu-link"
+                href="https://github.com/ihao/FixILrut"
+                title="GitHub"
+                rel="noopener noreffer" target="_blank"
+              ><i class='fab fa-github fa-fw'></i> </a></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fas fa-adjust fa-fw"></i>
+        </li><li class="menu-item language">
+            <span title="选择语言">简体中文<i class="dropdown-icon fas fa-chevron-down"></i>
+            </span>
+            <select class="language-select" onchange="location = this.value;"><option disabled>没有更多翻译</option></select>
+          </li></ul>
+    </nav>
+  </div>
+</header>
+<div class="search-dropdown desktop">
+  <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+  <div id="search-dropdown-mobile"></div>
+</div>
+<main class="container" page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录</h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    
+  </aside>
+
+  <article class="page single"><h1 class="single-title animate__animated animate__flipInX">使用hugo生成静态博客并部署在GitHub上</h1><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a
+  href="https://lucasguake.github.io"
+  
+    title="作者"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer author"
+  
+  
+  
+    class="author"
+  
+  
+><img
+    class="lazyload avatar"
+    src="/svg/loading.min.svg"
+    data-src="https://gravatar.loli.net/avatar/909c0da67c359e43b02b99f54db85757?s=32&amp;d=mp"
+    data-srcset="https://gravatar.loli.net/avatar/909c0da67c359e43b02b99f54db85757?s=32&amp;d=mp, https://gravatar.loli.net/avatar/909c0da67c359e43b02b99f54db85757?s=32&amp;d=mp 1.5x, https://gravatar.loli.net/avatar/909c0da67c359e43b02b99f54db85757?s=32&amp;d=mp 2x"
+    data-sizes="auto"
+    alt="@张祎"
+    title="@张祎" />&nbsp;@张祎</a></span>
+          <span class="post-category">收录于 <a href="/categories/hugo%E7%B3%BB%E5%88%97/"><i class="far fa-folder fa-fw"></i>&nbsp;hugo系列</a></span></div>
+      <div class="post-meta-line"><span title=2022-08-06&#32;21:57:40>
+            <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-06" >2022-08-06</time>
+          </span>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 770 字&nbsp;
+        <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+    </div><div class="details toc" id="toc-static" kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fas fa-angle-right"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hugo安装及配置">hugo安装及配置</a>
+      <ul>
+        <li><a href="#hugo的下载">hugo的下载</a></li>
+        <li><a href="#hugo-安装验证">hugo 安装验证</a></li>
+        <li><a href="#hugo-配置">hugo 配置</a></li>
+      </ul>
+    </li>
+    <li><a href="#建立博客与配置主题">建立博客与配置主题</a>
+      <ul>
+        <li><a href="#搭建博客">搭建博客</a></li>
+        <li><a href="#主题">主题</a>
+          <ul>
+            <li><a href="#此处以本站主题-fixit-为例">此处以本站主题 Fixit 为例</a></li>
+          </ul>
+        </li>
+        <li><a href="#部署到github上">部署到github上</a>
+          <ul>
+            <li><a href="#部署过程">部署过程</a></li>
+            <li><a href="#命令">命令</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。</p>
+<h2 id="hugo安装及配置">hugo安装及配置</h2>
+<h3 id="hugo的下载">hugo的下载</h3>
+<p>在<a
+  href="https://github.com/gohugoio/hugo/releases"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>hugo的github页面<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a>中下载hugo版本(建议下载hugo_extended)
+然后将hugo文件放在自定义的文件夹内（我在D盘创建了hugo文件夹并将hugo文件解压到D:\hugo\bin)
+<img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="2.png"
+    data-srcset="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/2.png, 2.png 1.5x, /%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/2.png 2x"
+    data-sizes="auto"
+    alt="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/2.png"
+    title="放在自定义的文件夹内" /></p>
+<h3 id="hugo-安装验证">hugo 安装验证</h3>
+<p>安装成功后验证一下，在命令行中输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果出现
+<code>hugo v0.86.1-F6821B88 windows/amd64 BuildDate=2021-07-30T10:13:35Z VendorInfo=gohugoio</code> 类似内容</p>
+<p>则为成功安装</p>
+<p><img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="anzhuangyanzheng.png"
+    data-srcset="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/anzhuangyanzheng.png, anzhuangyanzheng.png 1.5x, /%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/anzhuangyanzheng.png 2x"
+    data-sizes="auto"
+    alt="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/anzhuangyanzheng.png"
+    title="安装验证" /></p>
+<h3 id="hugo-配置">hugo 配置</h3>
+<p>电脑搜索 <code>编辑系统环境变量</code> (或 右击windows中的此电脑，在选择框中选择属性-&gt;高级系统设置)</p>
+<p>然后 点击 <code>环境变量-&gt;系统变量-&gt;Path-&gt;编辑-&gt;新建</code> 然后输入自定义的文件夹的路径
+<img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="3.png"
+    data-srcset="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/3.png, 3.png 1.5x, /%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/3.png 2x"
+    data-sizes="auto"
+    alt="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/3.png"
+    title="3" /> <img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="4.png"
+    data-srcset="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/4.png, 4.png 1.5x, /%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/4.png 2x"
+    data-sizes="auto"
+    alt="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/4.png"
+    title="4" /></p>
+<h2 id="建立博客与配置主题">建立博客与配置主题</h2>
+<p>右键文件夹内空白处 选择 在终端中打开
+会出现 <img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="5.png"
+    data-srcset="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/5.png, 5.png 1.5x, /%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/5.png 2x"
+    data-sizes="auto"
+    alt="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/5.png"
+    title="5" /></p>
+<h3 id="搭建博客">搭建博客</h3>
+<p>建立博客名为blog</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new site blog
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>就会发现<img
+    class="lazyload"
+    src="/svg/loading.min.svg"
+    data-src="6.png"
+    data-srcset="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/6.png, 6.png 1.5x, /%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/6.png 2x"
+    data-sizes="auto"
+    alt="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/6.png"
+    title="6" />
+继续在终端输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd blog
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时再输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>就可以通过 http://localhost:1313/ 来访问自己的博客（仅自己可访问）</p>
+<h3 id="主题">主题</h3>
+<p>在 <a
+  href="https://themes.gohugo.io/"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://themes.gohugo.io/<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> （或其他地方） 找到自己喜欢的主题后 根据主题的说明自行安装</p>
+<h4 id="此处以本站主题-fixit-为例">此处以本站主题 Fixit 为例</h4>
+<p>（本站后续更新关于Fixit主题美化教程）</p>
+<p>首先在 <a
+  href="https://github.com/hugo-fixit/FixIt/tags"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>Fixit<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a> 选择版本并下载（zip)</p>
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-pencil-alt fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">不要使用 <strong>git clone <a
+  href="https://github.com/hugo-fixit/FixIt.git"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>https://github.com/hugo-fixit/FixIt.git<i class="fas fa-external-link-alt fa-fw fa-xs ms-1"></i></a></strong>  这将会获得开发版本的Fixit</div>
+    </div>
+  </div>
+<p>将文件解压到themes文件夹下(建议将fixity文件中exampleSite内容复制到根目录下)</p>
+<h3 id="部署到github上">部署到github上</h3>
+<h4 id="部署过程">部署过程</h4>
+<p>省略</p>
+<h4 id="命令">命令</h4>
+<p><code>baseURL = &quot;https://lucasguake.github.io/&quot;</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo    ##生成静态页面文件
+</span></span><span class="line"><span class="cl">cd public
+</span></span><span class="line"><span class="cl">git init    ##初始化仓库
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/lucasguake/lucasguake.github.io.git    ##链接远程仓库
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m &#34;first commit&#34;
+</span></span><span class="line"><span class="cl">git push -u origin master
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在此之后更新文章，使用hugo生成新的静态页面，并使用git push进行同步</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo
+</span></span><span class="line"><span class="cl">cd public
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git status
+</span></span><span class="line"><span class="cl">git commit -m &#34;add blog post&#34;
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fas fa-pencil-alt fa-fw"></i>注意<i class="details-icon fas fa-angle-right fa-fw"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">如果最后一步git push出错 请用 <em><strong>git push -u origin master</strong></em>  或开启加速器</div>
+    </div>
+  </div><div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/images/wechat.png">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/images/alipay.png">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2022-08-07&#32;17:44:40>更新于 2022-08-07</span>
+      </div>
+      <div class="post-info-license"><span><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+    </div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a
+  href="/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/index.md"
+  
+    title="阅读原始文档"
+  
+  
+  
+  
+  
+    class="link-to-markdown"
+  
+  
+>阅读原始文档</a></span><span><a
+  href="https://github.com/Lruihao/FixIt/edit/master/exampleSite/content/posts%5c%e4%bd%bf%e7%94%a8%20hugo%20%e7%94%9f%e6%88%90%e9%9d%99%e6%80%81%e5%8d%9a%e5%ae%a2%e5%b9%b6%e9%83%a8%e7%bd%b2%e5%9c%a8%20GitHub%20%e4%b8%8a%5cindex.md"
+  
+    title="编辑此页"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+    class="link-to-edit"
+  
+  
+>编辑此页</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/" data-title="使用hugo生成静态博客并部署在GitHub上" data-hashtags="hugo,github"><i class="fab fa-twitter fa-fw"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/" data-hashtag="hugo"><i class="fab fa-facebook-square fa-fw"></i></a>
+  <a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/" data-title="使用hugo生成静态博客并部署在GitHub上"><i class="fab fa-hacker-news fa-fw"></i></a>
+  <a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/" data-title="使用hugo生成静态博客并部署在GitHub上"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/" data-title="使用hugo生成静态博客并部署在GitHub上" data-ralateuid="u/6235621486"><i class="fab fa-weibo fa-fw"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/hugo/">hugo</a>,&nbsp;<a href="/tags/github/">github</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/jiaocheng/" class="prev" rel="prev" title="git教程"><i class="fas fa-angle-left fa-fw"></i>git教程</a></div>
+</div>
+<div id="comments"><div id="waline" class="comment"></div><noscript>
+        Please enable JavaScript to view the comments powered by <a href="https://waline.js.org/" rel="external nofollow noopener noreffer">Waline</a>.
+      </noscript></div></article></main><footer class="footer">
+    <div class="footer-line">
+      <span id="run-time"></span>
+    </div>
+    
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreffer" title="Hugo 0.101.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/Lruihao/FixIt" target="_blank" rel="external nofollow noopener noreffer" title="FixIt v0.2.14"><img class="fixit-icon" src="/images/fixit.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright"><i class="far fa-copyright fa-fw"></i>
+            <span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">
+              <a
+  href="https://lucasguake.github.io"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+  
+>@张祎</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line ibruce">
+          <span id="busuanzi_container_site_uv" title='总访客数'><i class="far fa-user fa-fw"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin fa-fw"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="far fa-eye fa-fw"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin fa-fw"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets">
+  <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+      <i class="fas fa-arrow-up fa-fw"></i>
+    </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+      <i class="fas fa-comment fa-fw"></i>
+    </a>
+  </div><a
+  href="https://github.com/Lucasguake"
+  
+    title="在 GitHub 上查看源代码"
+  
+  
+    
+    
+    target="_blank"
+  
+  
+    rel="external nofollow noopener noreffer"
+  
+  
+  
+    class="github-corner right d-none-mobile"
+  
+  
+><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div>
+</div><div class="sidebar_wo">
+      <div id="leimu">
+      <img src="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/b2t/leimuA.png" alt="雷姆" 
+      onmouseover="this.src='https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/b2t/leimuB.png'" 
+      onmouseout="this.src='https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/b2t/leimuA.png'" title="回到顶部">
+      </div>
+      <div class="sidebar_wo" id="lamu">
+      <img src="https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/b2t/lamuA.png" alt="雷姆" 
+      onmouseover="this.src='https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/b2t/lamuB.png'" 
+      onmouseout="this.src='https://cdn.jsdelivr.net/gh/lewky/lewky.github.io@master/images/b2t/lamuA.png'" title="回到底部">
+      </div>
+    </div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/waline/Waline.min.js" defer></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js" defer></script><script type="text/javascript" src="/lib/algoliasearch/algoliasearch-lite.umd.min.js" defer></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js" async defer></script><script type="text/javascript" src="/lib/sharer/sharer.min.js" async defer></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script type="text/javascript" src="/lib/pangu/pangu.min.js" defer></script><script type="text/javascript" src="/lib/cell-watermark/watermark.min.js" defer></script><script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"waline":{"copyright":true,"dark":"body[theme='dark']","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo","https://unpkg.com/@waline/emojis@1.0.1/bilibili"],"highlight":true,"lang":"zh-cn","login":"enable","meta":["nick","mail","link"],"pageSize":10,"serverURL":"https://blog-df175a1ul-lucasguake.vercel.app/"}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"enablePangu":true,"search":{"algoliaAppID":"YKOM6PKLUY","algoliaIndex":"index.zh-cn","algoliaSearchKey":"a44c110d3ac360be2c69cd79d34b77a8","highlightTag":"em","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50,"type":"algolia"},"watermark":{"content":"\u003cimg class=\"fixit-icon\" src=\"/images/fixit.svg\" alt=\"FixIt logo\" /\u003e FixIt 主题","enable":true,"height":21,"opacity":0.0125}};</script><script type="text/javascript" src="/js/theme.min.js" defer></script><script type="text/javascript" src="/js/_custom.min.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@2.1.3/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-backstretch@2.1.18/jquery.backstretch.min.js"></script>
+
+<script type="text/javascript" src="/js/custom.js"></script></body>
+</html>

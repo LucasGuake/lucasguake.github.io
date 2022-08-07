@@ -4,7 +4,14 @@
     <link>https://lucasguake.github.io/posts/</link>
     <description>所有文章 | 张祎 de 学习笔记</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>331377750036@qq.com (@张祎)</managingEditor>
-      <webMaster>331377750036@qq.com (@张祎)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Aug 2022 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://lucasguake.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>331377750036@qq.com (@张祎)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://lucasguake.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>使用hugo生成静态博客并部署在GitHub上</title>
+  <link>https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/</link>
+  <pubDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</pubDate>
+  <author>@张祎</author>
+  <guid>https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/</guid>
+  <description><![CDATA[<p>hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。</p>]]></description>
+</item><item>
   <title>建站日志</title>
   <link>https://lucasguake.github.io/rizhi/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
@@ -25,6 +32,13 @@
   <author>@张祎</author>
   <guid>https://lucasguake.github.io/jiaocheng/</guid>
   <description><![CDATA[<p>这篇文章提供了可以在 Hugo 的文章中使用的基本 Markdown 语法示例。</p>]]></description>
+</item><item>
+  <title>使用hugo生成静态博客并部署在GitHub上</title>
+  <link>https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/</link>
+  <pubDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</pubDate>
+  <author>@张祎</author>
+  <guid>https://lucasguake.github.io/%E4%BD%BF%E7%94%A8-hugo-%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%9C%A8-github-%E4%B8%8A/</guid>
+  <description><![CDATA[<p>hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。</p>]]></description>
 </item><item>
   <title>git教程</title>
   <link>https://lucasguake.github.io/jiaocheng/</link>
