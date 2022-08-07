@@ -5,6 +5,15 @@
       <loc>https://lucasguake.github.io/hugo1.0/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://lucasguake.github.io/jiaocheng/</loc><lastmod>2022-08-06T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://lucasguake.github.io/friends/</loc><lastmod>2022-08-06T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://lucasguake.github.io/main/</loc><lastmod>2022-01-20T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="https://lucasguake.github.io/en/main/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="zh-cn"
+          href="https://lucasguake.github.io/main/"
+          /></url><url>
       <loc>https://lucasguake.github.io/categories/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
@@ -17,7 +26,15 @@
       <loc>https://lucasguake.github.io/tags/github/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://lucasguake.github.io/tags/hugo/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://lucasguake.github.io/categories/hugo%E7%B3%BB%E5%88%97/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-      <loc>https://lucasguake.github.io/posts/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://lucasguake.github.io/posts/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="https://lucasguake.github.io/en/posts/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="zh-cn"
+          href="https://lucasguake.github.io/posts/"
+          /></url><url>
       <loc>https://lucasguake.github.io/tags/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority><xhtml:link
             rel="alternate"
             hreflang="en"
@@ -38,6 +55,33 @@
           /></url><url>
       <loc>https://lucasguake.github.io/categories/github/</loc><lastmod>2022-08-06T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
       <loc>https://lucasguake.github.io/tags/%E4%B8%8A%E4%BC%A0/</loc><lastmod>2022-08-06T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+      <loc>https://lucasguake.github.io/tags/html/</loc><lastmod>2022-01-20T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="https://lucasguake.github.io/en/tags/html/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="zh-cn"
+          href="https://lucasguake.github.io/tags/html/"
+          /></url><url>
+      <loc>https://lucasguake.github.io/tags/markdown/</loc><lastmod>2022-01-20T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="https://lucasguake.github.io/en/tags/markdown/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="zh-cn"
+          href="https://lucasguake.github.io/tags/markdown/"
+          /></url><url>
+      <loc>https://lucasguake.github.io/categories/markdown/</loc><lastmod>2022-01-20T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            rel="alternate"
+            hreflang="en"
+            href="https://lucasguake.github.io/en/categories/markdown/"
+            /><xhtml:link
+          rel="alternate"
+          hreflang="zh-cn"
+          href="https://lucasguake.github.io/categories/markdown/"
+          /></url><url>
       <loc>https://lucasguake.github.io/offline/</loc><lastmod>2022-05-15T23:07:03&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
             hreflang="en"
