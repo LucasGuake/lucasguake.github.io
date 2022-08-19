@@ -10,7 +10,7 @@
   <title>使用hugo生成静态博客并部署在GitHub上</title>
   <link>https://lucasguake.github.io/hugo1.0/</link>
   <pubDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</pubDate>
-  <author>@张祎</author>
+  <author> @张祎 </author>
   <guid>https://lucasguake.github.io/hugo1.0/</guid>
   <description><![CDATA[<p>hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。</p>]]></description>
 </item><item>

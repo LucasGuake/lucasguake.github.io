@@ -27,7 +27,9 @@ hugo version
 电脑搜索 `编辑系统环境变量` (或 右击windows中的此电脑，在选择框中选择属性->高级系统设置) 
 
 然后 点击 `环境变量->系统变量->Path->编辑->新建` 然后输入自定义的文件夹的路径
-![3](3.png) ![4](4.png)
+![3](3.png)
+
+![4](4.png)
 
 
 ## 建立博客与配置主题
@@ -62,13 +64,28 @@ hugo server
 不要使用 **git clone https://github.com/hugo-fixit/FixIt.git**  这将会获得开发版本的Fixit
 {{< /admonition >}}
 
-将文件解压到themes文件夹下(建议将fixity文件中exampleSite内容复制到根目录下)
+将文件解压到themes文件夹下(建议将fixit文件中exampleSite内容复制到根目录下)
 
 ### 部署到github上
+{{< admonition >}}
+为方便演示，我使用 **lucasguake**  为名称（自己做请务必替换)
+{{< /admonition >}}
+
 #### 部署过程
-省略
+1.在github上创建账号
+
+2.Create a new repository 命名为  `lucasguake.github.io`
 #### 命令
+将博客内的`config.toml`中的内容输入为以下
+
 `baseURL = "https://lucasguake.github.io/"`
+
+
+然后在 **hugo\blog** 内用终端打开
+
+![7](7.png)
+
+输入以下内容
 ```
 hugo    ##生成静态页面文件
 cd public
