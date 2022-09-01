@@ -6,10 +6,10 @@
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>331377750036@qq.com (@张祎)</managingEditor>
       <webMaster>331377750036@qq.com (@张祎)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://lucasguake.github.io/posts/" rel="self" type="application/rss+xml" /><item>
   <title>使用hugo生成静态博客并部署在GitHub上</title>
-  <link>https://lucasguake.github.io/hugo1.0/</link>
+  <link>https://lucasguake.github.io/hugo1/</link>
   <pubDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</pubDate>
   <author> @张祎 </author>
-  <guid>https://lucasguake.github.io/hugo1.0/</guid>
+  <guid>https://lucasguake.github.io/hugo1/</guid>
   <description><![CDATA[<p>hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。</p>]]></description>
 </item><item>
   <title>建站日志</title>
@@ -27,10 +27,10 @@
   <description><![CDATA[<p>这篇文章提供了博主收藏的链接.</p>]]></description>
 </item><item>
   <title>使用hugo生成静态博客并部署在GitHub上</title>
-  <link>https://lucasguake.github.io/hugo1.0/</link>
+  <link>https://lucasguake.github.io/hugo1/</link>
   <pubDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</pubDate>
   <author> @张祎 </author>
-  <guid>https://lucasguake.github.io/hugo1.0/</guid>
+  <guid>https://lucasguake.github.io/hugo1/</guid>
   <description><![CDATA[<p>hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。</p>]]></description>
 </item><item>
   <title>链接收藏</title>

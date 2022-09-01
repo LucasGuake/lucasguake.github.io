@@ -2,7 +2,7 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>https://lucasguake.github.io/hugo1.0/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
+      <loc>https://lucasguake.github.io/hugo1/</loc><lastmod>2022-08-07T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
       <loc>https://lucasguake.github.io/friends/</loc><lastmod>2022-08-06T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url><url>
       <loc>https://lucasguake.github.io/main/</loc><lastmod>2022-01-20T17:44:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
             rel="alternate"
