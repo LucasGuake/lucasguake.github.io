@@ -1,28 +1,42 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>所有文章 - 2333 de 学习笔记</title>
+    <title>所有文章 -  📖张祎 de 学习笔记</title>
     <link>https://lucasguake.github.io/posts/</link>
-    <description>所有文章 | 2333 de 学习笔记</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>331377750036@qq.com (@2333)</managingEditor>
-      <webMaster>331377750036@qq.com (@2333)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 05 Aug 2022 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://lucasguake.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <description>所有文章 |  📖张祎 de 学习笔记</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>331377750036@qq.com (@张祎)</managingEditor>
+      <webMaster>331377750036@qq.com (@张祎)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</lastBuildDate><atom:link href="https://lucasguake.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>使用hugo生成静态博客并部署在GitHub上</title>
+  <link>https://lucasguake.github.io/hugo1.0/</link>
+  <pubDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</pubDate>
+  <author> @张祎 </author>
+  <guid>https://lucasguake.github.io/hugo1.0/</guid>
+  <description><![CDATA[<p>hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。</p>]]></description>
+</item><item>
   <title>建站日志</title>
   <link>https://lucasguake.github.io/rizhi/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-  <author>@2333</author>
+  <author>@张祎</author>
   <guid>https://lucasguake.github.io/rizhi/</guid>
   <description><![CDATA[前言 233 233 2323 23 23 123 213 12 3 2022 07 1234124214 12412 4 124 21 412 412 412 4214 08 12412421 124 214 12 4 214 124 12 09 123214]]></description>
 </item><item>
   <title>链接收藏</title>
   <link>https://lucasguake.github.io/friends/</link>
   <pubDate>Fri, 05 Aug 2022 21:57:40 &#43;0800</pubDate>
-  <author>@2333</author>
+  <author>@张祎</author>
   <guid>https://lucasguake.github.io/friends/</guid>
   <description><![CDATA[<p>这篇文章提供了博主收藏的链接.</p>]]></description>
+</item><item>
+  <title>使用hugo生成静态博客并部署在GitHub上</title>
+  <link>https://lucasguake.github.io/hugo1.0/</link>
+  <pubDate>Sat, 06 Aug 2022 21:57:40 &#43;0800</pubDate>
+  <author> @张祎 </author>
+  <guid>https://lucasguake.github.io/hugo1.0/</guid>
+  <description><![CDATA[<p>hugo是一个用Go语言编写的静态网页生成器，只需要一个命令 hugo 就可以在几秒钟内生成一个静态的博客页面，被称为世界上最快的网站构建框架，使hugo称为最受欢迎且最热门的静态网站生成器之一。</p>]]></description>
 </item><item>
   <title>链接收藏</title>
   <link>https://lucasguake.github.io/friends/</link>
   <pubDate>Fri, 05 Aug 2022 21:57:40 &#43;0800</pubDate>
-  <author>@2333</author>
+  <author>@张祎</author>
   <guid>https://lucasguake.github.io/friends/</guid>
   <description><![CDATA[<p>这篇文章提供了博主收藏的链接.</p>]]></description>
 </item><item>
@@ -36,7 +50,7 @@
   <title>建站日志</title>
   <link>https://lucasguake.github.io/rizhi/</link>
   <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-  <author>@2333</author>
+  <author>@张祎</author>
   <guid>https://lucasguake.github.io/rizhi/</guid>
   <description><![CDATA[前言 233 233 2323 23 23 123 213 12 3 2022 07 1234124214 12412 4 124 21 412 412 412 4214 08 12412421 124 214 12 4 214 124 12 09 123214]]></description>
 </item></channel>
