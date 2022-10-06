@@ -8,7 +8,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 <!--more-->
 
-姓名： 陈牧武
+姓名： 陈牧武 qq3520281343
 
 ![安装验证](1.jpg)
 
