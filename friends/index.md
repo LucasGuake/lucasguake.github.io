@@ -67,7 +67,7 @@ border-animation="led"
 
 {{< friend
 name="学啥"
-url="https://lucasguake.github.io/yunyishetuan/"
+url="https://lucasguake.github.io/studywhat"
 logo="https://lucasguake.github.io/images/avatar.jpg"
 word="一键选择我要学点什么"  
 primary-color="linear-green"   
