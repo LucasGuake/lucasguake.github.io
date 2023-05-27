@@ -1,11 +1,11 @@
 # 链接收藏
 
----
-title: "链接收藏"
-url: friends
-hiddenFromHomePage: true
----
-��言
+
+这篇文章提供了博主收藏的链接.
+
+<!--more-->
+
+## 前言
 ```
 {{</* friend
 name="网站名字"
@@ -58,7 +58,7 @@ border-animation="bln"
 {{< friend
 name="云翼社团"
 url="https://lucasguake.github.io/yunyishetuan/"
-logo="https://lucasguake.github.io/images/111.png"
+logo="https://lucasguake.github.io/images/avatar.jpg"
 word="云翼社团介绍未完成版"  
 primary-color="linear-green"   
 img-animation="rotate"  
