@@ -1,11 +1,11 @@
 # 链接收藏
 
----
-title: "链接收藏"
-url: friends
-hiddenFromHomePage: true
----
-��言
+
+这篇文章提供了博主收藏的链接.
+
+<!--more-->
+
+## 前言
 ```
 {{</* friend
 name="网站名字"
@@ -59,7 +59,7 @@ border-animation="bln"
 name="枣庄市第十八中学翔宇部表白墙"
 url="http://zzedu18love.weie.eu.org/index/index.php"
 logo="https://lovecards.cn/"
-word="云翼社团介绍未完成版"  
+word="由王启林和尚宏发共同开发"  
 primary-color="linear-green"   
 img-animation="rotate"  
 border-animation="led" 
