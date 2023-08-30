@@ -79,15 +79,10 @@ border-animation="led"
 
 ### 07
 
-1234124214
-12412
-4
-124
-21
-412
-412
-412
-4214
+枣庄市第十八中学翔宇部表白墙
+[链接1](http://zzedu18love.weie.eu.org)
+[链接2](http://zz18edulove.ikuns.fun)
+[链接3](http://zzedu18love.vsc.icu)
 
 ### 08
 
