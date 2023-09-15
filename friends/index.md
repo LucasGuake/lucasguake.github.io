@@ -57,7 +57,7 @@ border-animation="bln"
 
 {{< friend
 name="枣庄市第十八中学翔宇部表白墙"
-url="http://zzedu18love.weie.eu.org/index/index.php"
+url="https://18zhong.org.edu.kg"
 logo="https://lovecards.cn/"
 word="由王启林和尚宏发共同开发"  
 primary-color="linear-green"   
@@ -80,9 +80,8 @@ border-animation="led"
 ### 07
 
 枣庄市第十八中学翔宇部表白墙
-[链接1](http://zzedu18love.weie.eu.org)
-[链接2](http://zz18edulove.ikuns.fun)
-[链接3](http://zzedu18love.vsc.icu)
+[链接1](18zhong.org.edu.kg)
+[链接3](18zhong.weie.eu.org)
 
 ### 08
 
