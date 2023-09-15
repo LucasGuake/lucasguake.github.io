@@ -67,7 +67,7 @@ border-animation="led"
 
 {{< friend
 name="枣庄市第十八中学翔宇部留言墙2"
-url="https://18zhong.weie.eu.org"
+url="https://18zhongxue.weie.eu.org"
 logo="https://lovecards.cn/static/media/logo.80d7a0417b5e9513134a.png"
 word="由王启林和尚宏发共同开发"  
 primary-color="linear-green"   
