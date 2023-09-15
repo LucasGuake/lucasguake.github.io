@@ -56,9 +56,19 @@ border-animation="bln"
 ## 学习类
 
 {{< friend
-name="枣庄市第十八中学翔宇部表白墙"
+name="枣庄市第十八中学翔宇部留言墙"
 url="https://18zhong.org.edu.kg"
-logo="https://lovecards.cn/"
+logo="https://lovecards.cn/static/media/logo.80d7a0417b5e9513134a.png"
+word="由王启林和尚宏发共同开发"  
+primary-color="linear-green"   
+img-animation="rotate"  
+border-animation="led" 
+>}}
+
+{{< friend
+name="枣庄市第十八中学翔宇部留言墙2"
+url="https://18zhong.weie.eu.org"
+logo="https://lovecards.cn/static/media/logo.80d7a0417b5e9513134a.png"
 word="由王启林和尚宏发共同开发"  
 primary-color="linear-green"   
 img-animation="rotate"  
@@ -79,9 +89,6 @@ border-animation="led"
 
 ### 07
 
-枣庄市第十八中学翔宇部表白墙
-[链接1](18zhong.org.edu.kg)
-[链接3](18zhong.weie.eu.org)
 
 ### 08
 
